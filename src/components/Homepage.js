@@ -86,7 +86,6 @@ const HomePage = () => {
       });
     document.getElementById("onlyButton").style.display = "none";
   };
-  console.log(chartResults);
   return (
     <div className={styles.main}>
       <div className={styles.header}>

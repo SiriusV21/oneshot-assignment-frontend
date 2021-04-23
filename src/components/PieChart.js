@@ -12,7 +12,6 @@ export const PieChart = ({ data, setterFunction }) => {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         setterFunction(
           res.map((res, index) => ({ ...res, key: index, collegeName: <Link to={`/collegedetails/${res._id}`}>{res.collegeName}</Link> }))
         );

@@ -1,1 +1,2 @@
-export const apiURL = 'http://localhost:4000'
+export const apiURL =
+  process.env.NODE_ENV === "production" ? "https://oneshot-assignment-backend-siriusv21.vercel.app/" : "http://localhost:4000";
